@@ -14,8 +14,8 @@
 
         <nav>
           <ul>
-            <li><a href="#">My work</a></li>
-            <li><a href="#">My skills</a></li>
+            <li><a href="#portfolio">My work</a></li>
+            <li><a href="#skills">My skills</a></li>
             <li><a href="#">Hire me</a></li>
           </ul>
         </nav>
@@ -178,7 +178,7 @@
       />
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="skills-container">
         <ul>
           <li class="transition2">
@@ -215,7 +215,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
@@ -259,6 +259,148 @@
         <a href="#"><img src="images/project-two.png" alt="fretastic" /></a>
       </div>
     </section>
+
+    <section class="call-to-action" id="call-to-action">
+      <div class="call-to-action-container">
+        <h1 class="call-to-action-title">
+          Like what you see? <span>Hire me</span>
+        </h1>
+      </div>
+    </section>
+
+    <div class="contact">
+      <div class="social-header">
+        <ul>
+          <li>
+            <a href="#"><img src="images/bytesize_mail.svg" alt="email" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/akar-icons_twitter-fill.svg" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/akar-icons_github-fill.svg" alt="github"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-form-container">
+        <form class="contact-form" action="">
+            <label for="contact-form-name">Name</label>
+            <input type="text" name="name" id="contact-form-name" />
+
+            <label for="contact-form-email">Email</label>
+            <input type="email" name="email" id="contact-form-email" />
+
+            <label for="contact-form-message">Message</label>
+            <textarea
+              name="message"
+              id="contact-form-message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            
+            <input
+              class="form-button"
+              type="submit"
+              value="Send it!"
+              name="send"
+              id="contact-form-send-button"
+            />
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="footer-hero-design"
+        width="686"
+        height="550"
+        viewBox="0 0 686 550"
+      >
+        <g id="blockdesign" transform="translate(-935 -289)">
+          <rect
+            data-name="Rectangle 2"
+            width="172"
+            height="172"
+            rx="19"
+            transform="translate(1107 289)"
+            fill="#6e00ff"
+          />
+          <rect
+            data-name="Rectangle 10"
+            width="172"
+            height="172"
+            rx="86"
+            transform="translate(1107 461)"
+            fill="#ff64cb"
+          />
+          <rect
+            data-name="Rectangle 8"
+            width="172"
+            height="172"
+            rx="19"
+            transform="translate(935 461)"
+            fill="#e5d5fa"
+          />
+          <rect
+            data-name="Rectangle 5"
+            width="172"
+            height="172"
+            rx="19"
+            transform="translate(1107 633)"
+            fill="#6e00ff"
+          />
+          <rect
+            data-name="Rectangle 3"
+            width="172"
+            height="172"
+            rx="19"
+            transform="translate(1280 461)"
+            fill="#fff"
+          />
+          <rect
+            data-name="Rectangle 9"
+            width="172"
+            height="172"
+            rx="86"
+            transform="translate(1280 633)"
+            fill="#00f7ff"
+          />
+          <rect
+            data-name="Rectangle 7"
+            width="172"
+            height="172"
+            rx="19"
+            transform="translate(1452 633)"
+            fill="#fff"
+            opacity="0.17"
+          />
+          <rect
+            data-name="Rectangle 4"
+            width="172"
+            height="172"
+            rx="19"
+            transform="translate(1280 805)"
+            fill="#fff"
+          />
+        </g>
+      </svg>
+      <div class="footer-nav-container">
+        <a href="index.html" class="footer-logo">Arkadiusz Biesiada</a>
+
+        <nav>
+          <ul>
+            <li><a href="#portfolio">My work</a></li>
+            <li><a href="#skills">My skills</a></li>
+            <li><a href="#">Hire me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
@@ -328,12 +470,12 @@
       gsap.from(".transition3", {
         scrollTrigger: {
           trigger: ".transition3",
-          start: "top center"
+          start: "top center",
         },
         y: 50,
         opacity: 0,
         duration: 1.2,
-        stagger: .6
+        stagger: 0.6,
       });
     </script>
   </body>

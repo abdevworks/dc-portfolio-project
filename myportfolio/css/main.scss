@@ -171,6 +171,104 @@ section {
   margin-bottom: 2em;
 }
 
+.call-to-action {
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+}
+.call-to-action-title span {
+  color: #ff64cb;
+  text-decoration: underline;
+}
+
+.contact {
+  .social-header {
+    padding: 0;
+    margin: auto;
+  }
+
+  .contact-form-container {
+    background-color: #6e00ff;
+    color: white;
+    font-weight: bold;
+    height: 40vh;
+    padding: 5% 12% 5% 12%;
+
+    .contact-form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      input, textarea {
+        margin-top: -1.5em;
+      }
+
+      input {
+        height: 2.5em;
+      }
+       textarea {
+         height: 15em;
+         resize: none;
+       }
+
+       .form-button {
+         align-self: flex-end;
+         color: white;
+         background-color: #FF64CB;
+         font-weight: bold;
+         font-size: 0.85em;
+         border: none;
+         height: 3em;
+         width: 10em;
+         margin-top: 0.5em;
+       }
+    }
+  }
+}
+
+footer {
+  background-color: #6700ee;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer-hero-design {
+    display: none;
+  }
+
+  .footer-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em 0 2em;
+    width: 100%;
+    height: 100%;
+
+    .footer-logo {
+      color: #72e6ff;
+      font-weight: bold;
+    }
+
+    ul {
+      display: flex;
+
+      a {
+        color: white;
+        display: block;
+        padding: 0 1em;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .featured,
   .portfolio {
@@ -276,9 +374,9 @@ section {
 
   .hero-design {
     display: unset;
+    width: 100%;
     margin-left: -50%;
     margin-top: 15%;
-    width: 100%;
   }
 
   .portfolio img {
@@ -318,15 +416,15 @@ section {
 }
 
 .circle {
-    animation: circleAnim 1s infinite alternate-reverse;
+  animation: circleAnim 1s infinite alternate-reverse;
 }
 
 @keyframes circleAnim {
-    from {
-        transform: translate(262px, 798px);
-        z-index: 5;
-    }
-    to {
-        transform: translate(262px, 830px);
-    }
+  from {
+    transform: translate(262px, 798px);
+    z-index: 5;
+  }
+  to {
+    transform: translate(262px, 830px);
+  }
 }
