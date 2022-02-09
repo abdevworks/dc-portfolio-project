@@ -187,6 +187,7 @@ section {
 
 .call-to-action {
   height: 4vh;
+  padding: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,6 +210,7 @@ section {
 }
 
 .contact .social-header {
+  display: none;
   padding: 0;
   margin: auto;
 }
@@ -217,8 +219,16 @@ section {
   background-color: #6e00ff;
   color: white;
   font-weight: bold;
-  height: 40vh;
-  padding: 5% 12% 5% 12%;
+  padding: 8% 12% 8% 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact .contact-form-container .contact-form {
@@ -231,12 +241,14 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-.contact .contact-form-container .contact-form input, .contact .contact-form-container .contact-form textarea {
-  margin-top: -1.5em;
+.contact .contact-form-container .contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact .contact-form-container .contact-form input {
+  margin-bottom: 15px;
 }
 
 .contact .contact-form-container .contact-form input {
@@ -246,19 +258,21 @@ section {
 .contact .contact-form-container .contact-form textarea {
   height: 15em;
   resize: none;
+  margin-bottom: 20px;
 }
 
 .contact .contact-form-container .contact-form .form-button {
   -ms-flex-item-align: end;
       align-self: flex-end;
   color: white;
-  background-color: #FF64CB;
+  background-color: #ff64cb;
   font-weight: bold;
   font-size: 0.85em;
   border: none;
   height: 3em;
   width: 10em;
   margin-top: 0.5em;
+  margin-bottom: 0px;
 }
 
 footer {
@@ -357,6 +371,9 @@ footer .footer-nav-container ul a {
   .hero {
     height: 90vh;
   }
+  .scroll {
+    margin-top: 10em;
+  }
   .nav-container {
     display: -ms-grid;
     display: grid;
@@ -422,6 +439,30 @@ footer .footer-nav-container ul a {
     float: right;
     max-width: 500px;
   }
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact .social-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-box-flex: 0.45;
+        -ms-flex: 0.45;
+            flex: 0.45;
+    padding: 0;
+    margin: auto;
+  }
+  .contact .contact-form-container {
+    -webkit-box-flex: 0.55;
+        -ms-flex: 0.55;
+            flex: 0.55;
+  }
 }
 
 @media only screen and (min-width: 1250px) {
@@ -430,6 +471,9 @@ footer .footer-nav-container ul a {
   }
   .social-header {
     padding: 2em 10em 2em 0;
+  }
+  .scroll {
+    margin-top: 14em;
   }
   section {
     padding: 10em 10em 4em 10em;

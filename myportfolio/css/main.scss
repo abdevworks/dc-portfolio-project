@@ -173,6 +173,7 @@ section {
 
 .call-to-action {
   height: 4vh;
+  padding: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,6 +189,7 @@ section {
 
 .contact {
   .social-header {
+    display: none;
     padding: 0;
     margin: auto;
   }
@@ -196,39 +198,46 @@ section {
     background-color: #6e00ff;
     color: white;
     font-weight: bold;
-    height: 40vh;
-    padding: 5% 12% 5% 12%;
+    padding: 8% 12% 8% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .contact-form {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
 
-      input, textarea {
-        margin-top: -1.5em;
+      label {
+        margin-bottom: 5px;
+      }
+
+      input {
+        margin-bottom: 15px;
       }
 
       input {
         height: 2.5em;
       }
-       textarea {
-         height: 15em;
-         resize: none;
-       }
+      textarea {
+        height: 15em;
+        resize: none;
+        margin-bottom: 20px;
+      }
 
-       .form-button {
-         align-self: flex-end;
-         color: white;
-         background-color: #FF64CB;
-         font-weight: bold;
-         font-size: 0.85em;
-         border: none;
-         height: 3em;
-         width: 10em;
-         margin-top: 0.5em;
-       }
+      .form-button {
+        align-self: flex-end;
+        color: white;
+        background-color: #ff64cb;
+        font-weight: bold;
+        font-size: 0.85em;
+        border: none;
+        height: 3em;
+        width: 10em;
+        margin-top: 0.5em;
+        margin-bottom: 0px;
+      }
     }
   }
 }
@@ -318,6 +327,10 @@ footer {
     height: 90vh;
   }
 
+  .scroll {
+    margin-top: 10em;
+  }
+
   .nav-container {
     display: grid;
     grid-template-columns: 66% auto;
@@ -383,6 +396,23 @@ footer {
     float: right;
     max-width: 500px;
   }
+
+  .contact {
+    display: flex;
+    .social-header {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      flex: 0.45;
+      padding: 0;
+      margin: auto;
+
+
+    }
+    .contact-form-container {
+      flex: 0.55;
+    }
+  }
 }
 
 @media only screen and (min-width: 1250px) {
@@ -391,6 +421,9 @@ footer {
   }
   .social-header {
     padding: 2em 10em 2em 0;
+  }
+  .scroll {
+    margin-top: 14em;
   }
   section {
     padding: 10em 10em 4em 10em;
@@ -404,6 +437,7 @@ footer {
   header {
     padding: 2em 2em 2em 20em;
   }
+
   .social-header {
     padding: 2em 20em 2em 0;
   }
